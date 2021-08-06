@@ -1,0 +1,37 @@
+{
+    "routePrefix": "integrations.algolia.settings",
+    "sections": [
+        {
+            "columns": 2,
+            "fields": [
+                {
+                    "label": "App Key",
+                    "name": "app_id",
+                    "value": "",
+                    "meta": {
+                        "type": "input",
+                        "content": "encrypt"
+                    }
+                },
+                {
+                    "label": "Secret",
+                    "name": "secret",
+                    "value": "",
+                    "meta": {
+                        "type": "input",
+                        "content": "encrypt"
+                    }
+                },
+                {
+                    "label": "Enabled",
+                    "name": "enabled",
+                    "value": false,
+                    "meta": {
+                        "type": "input",
+                        "content": "checkbox"
+                    }
+                }
+            ]
+        }
+    ]
+}
