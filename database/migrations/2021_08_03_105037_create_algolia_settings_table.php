@@ -11,9 +11,10 @@ class CreateAlgoliaSettingsTable extends Migration
         Schema::create('algolia_settings', function (Blueprint $table) {
             $table->increments('id');
 
-            $table->string('enabled');
             $table->string('app_id')->nullable();
             $table->string('secret')->nullable();
+
+            $table->boolean('enabled');
 
             $table->timestamps();
         });

@@ -25,8 +25,6 @@ class Settings extends Model
 
     public static function current()
     {
-        return self::find(1) ?? self::create(['enabled' => false]);
-
         return self::$instance
             ??= self::cacheGet(1)
             ?? self::factory()->create();
