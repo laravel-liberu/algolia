@@ -3,6 +3,7 @@
 namespace LaravelEnso\Algolia;
 
 use Illuminate\Support\ServiceProvider;
+use LaravelEnso\AlgoliaWebshop\Http\Middleware\Integrations;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -14,6 +15,7 @@ class AppServiceProvider extends ServiceProvider
 
     public function register()
     {
-        //
+        $this->app['router']
+            ->aliasMiddleware('integrations', Integrations::class);
     }
 }
