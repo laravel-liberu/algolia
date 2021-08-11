@@ -30,7 +30,7 @@ class Settings extends Model
             ?? self::factory()->create();
     }
 
-    public static function usesAlgolia()
+    public static function enabled()
     {
         return self::current()->enabled;
     }

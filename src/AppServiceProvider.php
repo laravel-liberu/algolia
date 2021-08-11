@@ -3,7 +3,7 @@
 namespace LaravelEnso\Algolia;
 
 use Illuminate\Support\ServiceProvider;
-use LaravelEnso\AlgoliaWebshop\Http\Middleware\Integrations;
+use LaravelEnso\Algolia\Http\Middleware\Integrations;
 
 class AppServiceProvider extends ServiceProvider
 {

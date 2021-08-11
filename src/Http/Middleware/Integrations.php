@@ -1,6 +1,6 @@
 <?php
 
-namespace LaravelEnso\AlgoliaWebshop\Http\Middleware;
+namespace LaravelEnso\Algolia\Http\Middleware;
 
 use Closure;
 use Illuminate\Support\Facades\Config;
