@@ -15,6 +15,8 @@ class Settings extends Model
 
     protected $guarded = ['id'];
 
+    protected array $rememberableKeys = ['id'];
+
     protected $casts = [
         'enabled' => 'boolean',
         'secret' => Encrypt::class,
