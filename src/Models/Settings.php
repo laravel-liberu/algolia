@@ -25,14 +25,24 @@ class Settings extends Model
 
     private static $instance;
 
-    public static function current()
+    public static function current(): self
     {
         return self::$instance
             ??= self::cacheGet(1)
             ?? self::factory()->create();
     }
 
-    public static function enabled()
+    public static function appId(): ?string
+    {
+        return self::current()->app_id;
+    }
+
+    public static function secret(): ?string
+    {
+        return self::current()->secret;
+    }
+
+    public static function enabled(): bool
     {
         return self::current()->enabled;
     }
