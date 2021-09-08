@@ -2,9 +2,8 @@
 
 namespace LaravelEnso\Algolia;
 
-use Illuminate\Support\Facades\Config;
 use Illuminate\Support\ServiceProvider;
-use LaravelEnso\Algolia\Models\Settings;
+use LaravelEnso\Algolia\Http\Middleware\Algolia;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -12,11 +11,10 @@ class AppServiceProvider extends ServiceProvider
     {
         $this->loadRoutesFrom(__DIR__.'/../routes/api.php');
         $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
+    }
 
-        if (Settings::enabled()) {
-            Config::set('scout.driver', 'algolia');
-            Config::set('scout.algolia.id', Settings::appId());
-            Config::set('scout.algolia.secret', Settings::secret());
-        }
+    public function register()
+    {
+        $this->app['router']->aliasMiddleware('algolia', Algolia::class);
     }
 }
