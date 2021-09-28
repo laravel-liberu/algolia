@@ -20,8 +20,6 @@ class Settings extends Model
 
     protected $casts = [
         'enabled' => 'boolean',
-        'secret' => Encrypt::class,
-        'app_id' => Encrypt::class,
     ];
 
     private static $instance;
@@ -33,27 +31,8 @@ class Settings extends Model
             ?? self::factory()->create();
     }
 
-    public static function appId(): ?string
-    {
-        return self::current()->app_id;
-    }
-
-    public static function secret(): ?string
-    {
-        return self::current()->secret;
-    }
-
     public static function enabled(): bool
     {
         return self::current()->enabled;
-    }
-
-    public static function initializeIfEnabled(): void
-    {
-        if (self::enabled()) {
-            Config::set('scout.driver', 'algolia');
-            Config::set('scout.algolia.id', self::appId());
-            Config::set('scout.algolia.secret', self::secret());
-        }
     }
 }

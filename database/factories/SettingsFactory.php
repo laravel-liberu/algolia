@@ -12,9 +12,7 @@ class SettingsFactory extends Factory
     public function definition()
     {
         return [
-            'app_id' => null,
             'enabled' => false,
-            'secret' => null,
         ];
     }
 }

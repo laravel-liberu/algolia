@@ -3,25 +3,21 @@
 namespace LaravelEnso\Algolia\Upgrades;
 
 use Illuminate\Support\Facades\Schema;
-use LaravelEnso\Algolia\Models\Settings as Model;
-use LaravelEnso\Upgrade\Contracts\MigratesData;
-use LaravelEnso\Webshop\Models\Settings as WebshopSettings;
+use LaravelEnso\Upgrade\Contracts\MigratesTable;
+use LaravelEnso\Upgrade\Helpers\Table;
 
-class Settings implements MigratesData
+class Settings implements MigratesTable
 {
     public function isMigrated(): bool
     {
-        return Schema::hasTable('algolia_settings') && Model::exists();
+        return ! Table::hasColumn('algolia_settings', 'app_id');
     }
 
-    public function migrateData(): void
+    public function migrateTable(): void
     {
-        $settings = WebshopSettings::first();
-
-        (new Model())->setRawAttributes([
-            'app_id' => $settings->algolia_app_id,
-            'secret' => $settings->algolia_secret,
-            'enabled' => (bool) $settings->algolia_enabled,
-        ])->save();
+        Schema::table('algolia_settings', function ($table) {
+            $table->dropColumn('app_id');
+            $table->dropColumn('secret');
+        });
     }
 }
