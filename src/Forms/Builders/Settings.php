@@ -14,7 +14,6 @@ class Settings
         $this->form = new Form($this->templatePath());
     }
 
-
     public function edit(Model $settings)
     {
         return $this->form->edit($settings);
