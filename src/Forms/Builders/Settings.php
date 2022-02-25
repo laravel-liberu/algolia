@@ -7,10 +7,22 @@ use LaravelEnso\Forms\Services\Form;
 
 class Settings
 {
-    protected const TemplatePath = __DIR__.'/../Templates/settings.json';
+    private const TemplatePath = __DIR__.'/../Templates/settings.json';
+
+    public function __construct()
+    {
+        $this->form = new Form($this->templatePath());
+    }
+
 
     public function edit(Model $settings)
     {
-        return (new Form(static::TemplatePath))->edit($settings);
+        return $this->form->edit($settings);
     }
+
+    protected function templatePath(): string
+    {
+        return self::TemplatePath;
+    }
+
 }
