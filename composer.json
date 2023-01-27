@@ -1,33 +1,33 @@
 {
-    "name": "laravel-enso/algolia",
+    "name": "cgdsoftware/algolia",
     "type": "library",
     "description": "",
     "authors": [
         {
             "name": "Adrian Ocneanu",
             "email": "aocneanu@gmail.com",
-            "homepage": "https://laravel-enso.com",
+            "homepage": "https://cgdsoftware.com",
             "role": "Developer"
         },
         {
             "name": "Mihai Ocneanu",
             "email": "mihai.ocneanu@gmail.com",
-            "homepage": "https://laravel-enso.com",
+            "homepage": "https://cgdsoftware.com",
             "role": "Developer"
         },
         {
             "name": "Vlad Chioivanu",
             "email": "vlad.chiovianu@earthlink.ro",
-            "homepage": "https://laravel-enso.com",
+            "homepage": "https://cgdsoftware.com",
             "role": "Developer"
         }
     ],
     "keywords": [],
-    "homepage": "https://www.laravel-enso.com",
+    "homepage": "https://www.cgdsoftware.com",
     "require": {
         "php": ">=8.0",
         "algolia/scout-extended": "^1.18",
-        "laravel-enso/core": "^8.0"
+        "cgdsoftware/core": "^8.0"
     },
     "autoload": {
         "psr-4": {
