@@ -1,33 +1,33 @@
 {
-    "name": "cgdsoftware/algolia",
+    "name": "laravel-liberu/algolia",
     "type": "library",
     "description": "",
     "authors": [
         {
             "name": "Adrian Ocneanu",
             "email": "aocneanu@gmail.com",
-            "homepage": "https://cgdsoftware.com",
+            "homepage": "https://laravel-liberu.com",
             "role": "Developer"
         },
         {
             "name": "Mihai Ocneanu",
             "email": "mihai.ocneanu@gmail.com",
-            "homepage": "https://cgdsoftware.com",
+            "homepage": "https://laravel-liberu.com",
             "role": "Developer"
         },
         {
             "name": "Vlad Chioivanu",
             "email": "vlad.chiovianu@earthlink.ro",
-            "homepage": "https://cgdsoftware.com",
+            "homepage": "https://laravel-liberu.com",
             "role": "Developer"
         }
     ],
     "keywords": [],
-    "homepage": "https://www.cgdsoftware.com",
+    "homepage": "https://www.laravel-liberu.com",
     "require": {
         "php": ">=8.0",
         "algolia/scout-extended": "^1.18",
-        "cgdsoftware/core": "^8.0"
+        "laravel-liberu/core": "^8.0"
     },
     "autoload": {
         "psr-4": {
