@@ -1,8 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use LaravelEnso\Algolia\Http\Controllers\Settings\Index;
-use LaravelEnso\Algolia\Http\Controllers\Settings\Update;
+use LaravelLiberu\Algolia\Http\Controllers\Settings\Index;
+use LaravelLiberu\Algolia\Http\Controllers\Settings\Update;
 
 Route::middleware(['api', 'auth', 'core'])
     ->prefix('api/integrations/algolia/settings')

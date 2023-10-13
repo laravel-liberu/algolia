@@ -1,9 +1,9 @@
 <?php
 
-namespace LaravelEnso\Algolia\Database\Factories;
+namespace LaravelLiberu\Algolia\Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
-use LaravelEnso\Algolia\Models\Settings as Model;
+use LaravelLiberu\Algolia\Models\Settings as Model;
 
 class SettingsFactory extends Factory
 {

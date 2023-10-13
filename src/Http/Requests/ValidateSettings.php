@@ -1,6 +1,6 @@
 <?php
 
-namespace LaravelEnso\Algolia\Http\Requests;
+namespace LaravelLiberu\Algolia\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 

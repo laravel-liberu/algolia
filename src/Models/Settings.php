@@ -1,12 +1,12 @@
 <?php
 
-namespace LaravelEnso\Algolia\Models;
+namespace LaravelLiberu\Algolia\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Config;
-use LaravelEnso\Helpers\Casts\Encrypt;
-use LaravelEnso\Rememberable\Traits\Rememberable;
+use LaravelLiberu\Helpers\Casts\Encrypt;
+use LaravelLiberu\Rememberable\Traits\Rememberable;
 
 class Settings extends Model
 {

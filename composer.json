@@ -31,14 +31,14 @@
     },
     "autoload": {
         "psr-4": {
-            "LaravelEnso\\Algolia\\": "src/",
-            "LaravelEnso\\Algolia\\Database\\Factories\\": "database/factories/"
+            "LaravelLiberu\\Algolia\\": "src/",
+            "LaravelLiberu\\Algolia\\Database\\Factories\\": "database/factories/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "LaravelEnso\\Algolia\\AppServiceProvider"
+                "LaravelLiberu\\Algolia\\AppServiceProvider"
             ]
         }
     },

@@ -1,6 +1,6 @@
 <?php
 
-namespace LaravelEnso\Algolia\Console;
+namespace LaravelLiberu\Algolia\Console;
 
 use Algolia\ScoutExtended\Facades\Algolia;
 use Illuminate\Console\Command;

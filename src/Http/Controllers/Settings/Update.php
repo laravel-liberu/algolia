@@ -1,10 +1,10 @@
 <?php
 
-namespace LaravelEnso\Algolia\Http\Controllers\Settings;
+namespace LaravelLiberu\Algolia\Http\Controllers\Settings;
 
 use Illuminate\Routing\Controller;
-use LaravelEnso\Algolia\Http\Requests\ValidateSettings;
-use LaravelEnso\Algolia\Models\Settings;
+use LaravelLiberu\Algolia\Http\Requests\ValidateSettings;
+use LaravelLiberu\Algolia\Models\Settings;
 
 class Update extends Controller
 {

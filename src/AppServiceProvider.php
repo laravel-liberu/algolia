@@ -1,9 +1,9 @@
 <?php
 
-namespace LaravelEnso\Algolia;
+namespace LaravelLiberu\Algolia;
 
 use Illuminate\Support\ServiceProvider;
-use LaravelEnso\Algolia\Console\Import;
+use LaravelLiberu\Algolia\Console\Import;
 
 class AppServiceProvider extends ServiceProvider
 {

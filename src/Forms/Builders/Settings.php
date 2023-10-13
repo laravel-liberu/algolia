@@ -1,9 +1,9 @@
 <?php
 
-namespace LaravelEnso\Algolia\Forms\Builders;
+namespace LaravelLiberu\Algolia\Forms\Builders;
 
-use LaravelEnso\Algolia\Models\Settings as Model;
-use LaravelEnso\Forms\Services\Form;
+use LaravelLiberu\Algolia\Models\Settings as Model;
+use LaravelLiberu\Forms\Services\Form;
 
 class Settings
 {
