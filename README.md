@@ -1,2 +1,2 @@
-###  laravel-enso - algolia
+###  laravel-liberu - algolia
 Coming soon

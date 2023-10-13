@@ -11,7 +11,7 @@ use Laravel\Scout\Events\ModelsImported;
 
 class Import extends Command
 {
-    protected $signature = 'enso:algolia:import
+    protected $signature = 'liberu:algolia:import
             {model : Class name of model to bulk import}
             {--c|chunk= : The number of records to import at a time (Defaults to configuration value: `scout.chunk.searchable`)}';
 
